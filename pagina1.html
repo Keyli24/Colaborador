@@ -11,20 +11,20 @@
   header{
     overflow: hidden;
     margin-bottom: 30px;
-    background: rgb(82, 76, 76);
+    background: rgb(147, 63, 110);
   }
   header .titulo{
     color:white;
-    font-size:50px
+    font-size:90px
   }
   header nav a {
     color: white;
-    padding: 10px 30px;
+    padding: 20px 30px;
     line-height: normal;
     display: inline-block;
     text-decoration: none;
     font-size :20px; 
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
 .todo{
@@ -33,24 +33,24 @@
 }
 
 header div a:hover{
-  background-color: #0a0066;
+  background-color: #0a0a0c;
 }
 </style>
 </head>
   <body> 
     <header>
       <div class="todo">
-      <center><div class="titulo">Mi Página Web</div> </center>
+      <center><div class="titulo">Mi Página Web </div> </center>
       <center>  <nav>
-          <a href="inicio.html">Inicio</a>
+         
 
         
- <a href="productos.html">Productos</a>
+ <a href="pagina3.html">Productos</a>
 
-          <a href="contactos.html">Contactos</a>
-          <a href="Programador.html">programador</a>
-          <a href="sugerencias.html">Sugerencias</a>
-          <a href="quejas.html">Quejas</a>
+          <a href="pagina4.html">Contactos</a>
+          <a href="pagina5.html">programador</a>
+          <a href="pagina6.html">Sugerencias</a>
+          <a href="pagina7.html">Registro</a>
           
         
         </nav>  </center> 
@@ -58,19 +58,85 @@ header div a:hover{
     </header>
 
   
-  <div class="row">
- <center><input type="text" size="100" ></center> <br>
-<center> <label for="">Nombre:</label><br>
- <input type="text" name="" id="" size="100"></center>
- <center> <label for="">Email:</label><br>
-  <input type="text" name="" id="" size="100"></center>
-  <center> <label for="">Mensaje:</label><br>
-    <textarea name="" id="" cols="95" rows="5"></textarea> </center> <br>
+    <style>
+      body {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          height: 100vh;
+          background-color: #f0f0f0;
+      }
 
-    <center><input type="button" value="ENVIAR" >  </center> 
+      .movimiento {
+          position: relative;
+      }
+
+      .emoji {
+          font-size: 200px;
+          animation: bounce 1s ease-in-out infinite;
+      }
+
+      @keyframes bounce {
+
+          0%,
+          20%,
+          50%,
+          80%,
+          100% {
+              transform: translateY(0);
+          }
+
+          40% {
+              transform: translateY(-20px);
+          }
+
+          60% {
+              transform: translateY(-10px);
+          }
+      }
+
+
+      .parte {
+          border: 1px solid #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+  </style>
+</head>
+
+<body>
   
+  <div >
+          <div class="parte">
+          <div class="movimiento">
+              <div class="emoji">💞</div>
+          </div>
+      </div>
 
+
+      <div class="parte">
+          <div class="movimiento">
+              <div class="emoji">🤠</div>
+          </div>
+      </div>
+      </div>
+ 
+
+      <div>
+
+  <div class="parte">
+      <div class="movimiento">
+          <div class="emoji">🍊</div>
+      </div>
   </div>
+  <div class="parte">
+      <div class="movimiento">
+          <div class="emoji">🍊</div>
+      </div>
+  </div>
+</div>
+
 
 
     
